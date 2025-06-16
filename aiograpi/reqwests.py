@@ -97,7 +97,7 @@ class Session:
 
     def _set_client(self):
         self._client = httpx.AsyncClient(
-            proxies=self._proxies, verify=self.verify, follow_redirects=True
+            proxy=self._proxies, verify=self.verify, follow_redirects=True
         )
 
     async def __aenter__(self):
