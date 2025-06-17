@@ -94,7 +94,7 @@ class Client(
 
     def set_proxy(self, dsn: str):
         if not dsn:
-            self.public.proxies = self.private.proxies = {}
+            self.public.proxies = self.private.proxies = None
             return False
         assert isinstance(
             dsn, str
