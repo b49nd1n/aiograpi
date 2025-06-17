@@ -74,6 +74,7 @@ class Session:
         self.verify = False
         self._client = None
         self._proxies = None
+        self._set_client()
 
     @property
     def cookies(self):
